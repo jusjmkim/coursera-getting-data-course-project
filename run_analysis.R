@@ -94,11 +94,11 @@ training_data_table <- compile_subject_data("train")
 ### Merge testing and training data together
 master_data_table <- rbind(testing_data_table, training_data_table)
 master_data_table <- arrange(master_data_table, subjectid, activity)
-fwrite(master_data_table, "master_data_table.csv")
+write.table(master_data_table, "master_data_table.txt", row.name = FALSE)
 
 ## CREATE A SECOND DATA SET WITH AVG OF EACH VARIABLE BY SUBJECT / ACTIVITY ##
 master_data_table_avg <- calc_avg(master_data_table)
-fwrite(master_data_table_avg, "master_data_table_avg.csv")
+write.table(master_data_table_avg, "master_data_table_avg.txt", row.name = FALSE)
 
 calc_avg <- function(data_table) {
   aggregate(data_table[,target_features], by = list(subjectid = data_table$subjectid, activity = data_table$activity), mean)

@@ -9,7 +9,7 @@
 6. Compile training data into one table
 7. Merge testing and training data into one table
 8. Aggregate averages of all variables by subject and by activity
-9. Export datasets to csv files
+9. Export datasets to txt files
 
 ## Functions
 

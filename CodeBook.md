@@ -1,7 +1,7 @@
 # Getting and Cleaning Data Course Project Code Book
 
 ## The Data
-Data were pulled and compiled from the `UCI HAR Dataset`. In the case of `master_data_table_avg`, averages of all feature data variables were taken by subject and by activity. Exported file versions of these datasets can be found in `master_data_table.csv` and `master_data_table_avg.csv`.
+Data were pulled and compiled from the `UCI HAR Dataset`. In the case of `master_data_table_avg`, averages of all feature data variables were taken by subject and by activity. Exported file versions of these datasets can be found in `master_data_table.txt` and `master_data_table_avg.txt`.
 
 ## Variables
 
